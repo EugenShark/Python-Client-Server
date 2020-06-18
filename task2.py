@@ -2,11 +2,11 @@ import json
 
 
 def write_order_to_json():
-    dict_to_json = dict([("item", input('Введите товар: ')),
-                         ("quantity", input('Введите количество: ')),
-                         ("price", input('Введите цену: ')),
-                         ("buyer", input('Введите покупателя: ')),
-                         ("date", input('Введите дату: '))])
+    dict_to_json = {"item": input('Введите товар: '),
+                    "quantity": input('Введите количество: '),
+                    "price": input('Введите цену: '),
+                    "buyer": input('Введите покупателя: '),
+                    "date": input('Введите дату: ')}
     # with open('orders.json', 'r', encoding='utf-8') as f_n:
     #     f_n_content = f_n.read()
     #хотел выгрузить данные, соединить с новым словарем и записать обратно...
